@@ -1,0 +1,882 @@
+11-Apr-2019 15:32:32.412 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.0.33
+11-Apr-2019 15:32:32.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 18 2016 20:31:49 UTC
+11-Apr-2019 15:32:32.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.0.33.0
+11-Apr-2019 15:32:32.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+11-Apr-2019 15:32:32.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+11-Apr-2019 15:32:32.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+11-Apr-2019 15:32:32.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk1.8.0_181\jre
+11-Apr-2019 15:32:32.414 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_181-b13
+11-Apr-2019 15:32:32.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+11-Apr-2019 15:32:32.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\my_dev\tomcat\apache-tomcat-8.0.33
+11-Apr-2019 15:32:32.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\my_dev\tomcat\apache-tomcat-8.0.33
+11-Apr-2019 15:32:32.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:/my_dev/tomcat/apache-tomcat-8.0.33/conf/logging.properties
+11-Apr-2019 15:32:32.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2019 15:32:32.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.endorsed.dirs=C:/my_dev/tomcat/apache-tomcat-8.0.33/endorsed
+11-Apr-2019 15:32:32.415 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:/my_dev/tomcat/apache-tomcat-8.0.33
+11-Apr-2019 15:32:32.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:/my_dev/tomcat/apache-tomcat-8.0.33
+11-Apr-2019 15:32:32.416 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:/my_dev/tomcat/apache-tomcat-8.0.33/temp
+11-Apr-2019 15:32:32.416 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_181\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\isaias\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\isaias\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\PuTTY;C:\my_dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Program Files\nodejs;C:\Users\isaias\AppData\Local\Microsoft\WindowsApp;C:\my_dev\maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin";C:\Users\isaias\AppData\Roaming\npm;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;.
+11-Apr-2019 15:32:32.668 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+11-Apr-2019 15:32:32.978 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2019 15:32:32.984 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2019 15:32:32.987 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+11-Apr-2019 15:32:32.987 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1364 ms
+11-Apr-2019 15:32:33.022 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+11-Apr-2019 15:32:33.022 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.33
+11-Apr-2019 15:32:33.051 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war
+11-Apr-2019 15:32:38.741 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/FastInfoset-1.2.15.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:32:39.414 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [META-INF/versions/9/module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/byte-buddy-1.9.5.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:32:39.426 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-api-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:32:39.442 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/txw2-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:32:40.228 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/stax-ex-1.8.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:32:40.444 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-runtime-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:32:41.287 SEVERE [localhost-startStop-1] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/istack-commons-runtime-3.0.7.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:32:41.945 INFO [localhost-startStop-1] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+11-Apr-2019 15:32:44.276 INFO [localhost-startStop-1] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+11-Apr-2019 15:32:44.534 INFO [localhost-startStop-1] org.hibernate.Version.logVersion HHH000412: Hibernate Core {5.4.0.Final}
+11-Apr-2019 15:32:44.537 INFO [localhost-startStop-1] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+11-Apr-2019 15:32:44.964 INFO [localhost-startStop-1] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-Apr-2019 15:32:47.981 INFO [localhost-startStop-1] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+11-Apr-2019 15:32:55.933 INFO [localhost-startStop-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-Apr-2019 15:32:56.507 INFO [localhost-startStop-1] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
+11-Apr-2019 15:32:58.845 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war has finished in 25,793 ms
+11-Apr-2019 15:32:58.846 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\docs
+11-Apr-2019 15:32:58.879 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\docs has finished in 33 ms
+11-Apr-2019 15:32:58.880 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\examples
+11-Apr-2019 15:33:00.211 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\examples has finished in 1,331 ms
+11-Apr-2019 15:33:00.211 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\host-manager
+11-Apr-2019 15:33:00.252 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\host-manager has finished in 41 ms
+11-Apr-2019 15:33:00.253 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\manager
+11-Apr-2019 15:33:00.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\manager has finished in 39 ms
+11-Apr-2019 15:33:00.292 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\ROOT
+11-Apr-2019 15:33:00.320 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\ROOT has finished in 28 ms
+11-Apr-2019 15:33:00.324 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+11-Apr-2019 15:33:00.335 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2019 15:33:00.338 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 27349 ms
+11-Apr-2019 15:34:30.387 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/florestal-web]
+11-Apr-2019 15:34:30.430 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [florestal-web] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+11-Apr-2019 15:34:30.546 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war
+11-Apr-2019 15:34:35.430 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/txw2-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:34:35.670 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/stax-ex-1.8.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:34:36.116 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-runtime-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:34:36.554 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [META-INF/versions/9/module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/byte-buddy-1.9.5.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:34:36.679 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/istack-commons-runtime-3.0.7.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:34:36.862 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/FastInfoset-1.2.15.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:34:37.535 SEVERE [localhost-startStop-2] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-api-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:34:39.285 INFO [localhost-startStop-2] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+11-Apr-2019 15:34:39.437 INFO [localhost-startStop-2] org.hibernate.Version.logVersion HHH000412: Hibernate Core {5.4.0.Final}
+11-Apr-2019 15:34:39.439 INFO [localhost-startStop-2] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+11-Apr-2019 15:34:39.720 INFO [localhost-startStop-2] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-Apr-2019 15:34:41.064 INFO [localhost-startStop-2] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+11-Apr-2019 15:34:43.321 INFO [localhost-startStop-2] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-Apr-2019 15:34:43.885 INFO [localhost-startStop-2] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
+11-Apr-2019 15:34:45.922 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war has finished in 15,376 ms
+11-Apr-2019 15:40:16.173 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/florestal-web]
+11-Apr-2019 15:40:16.245 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [florestal-web] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+11-Apr-2019 15:40:16.575 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war
+11-Apr-2019 15:40:23.238 SEVERE [localhost-startStop-3] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-runtime-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:40:24.145 SEVERE [localhost-startStop-3] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/FastInfoset-1.2.15.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:40:24.170 SEVERE [localhost-startStop-3] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-api-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:40:24.533 SEVERE [localhost-startStop-3] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [META-INF/versions/9/module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/byte-buddy-1.9.5.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:40:24.618 SEVERE [localhost-startStop-3] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/istack-commons-runtime-3.0.7.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:40:24.686 SEVERE [localhost-startStop-3] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/txw2-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:40:24.690 SEVERE [localhost-startStop-3] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/stax-ex-1.8.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 15:40:26.903 INFO [localhost-startStop-3] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+11-Apr-2019 15:40:27.095 INFO [localhost-startStop-3] org.hibernate.Version.logVersion HHH000412: Hibernate Core {5.4.0.Final}
+11-Apr-2019 15:40:27.097 INFO [localhost-startStop-3] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+11-Apr-2019 15:40:27.441 INFO [localhost-startStop-3] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-Apr-2019 15:40:32.178 INFO [localhost-startStop-3] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+11-Apr-2019 15:40:34.884 INFO [localhost-startStop-3] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-Apr-2019 15:40:35.541 INFO [localhost-startStop-3] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
+11-Apr-2019 15:40:37.686 INFO [localhost-startStop-3] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war has finished in 21,110 ms
+11-Apr-2019 16:05:28.494 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/florestal-web]
+11-Apr-2019 16:05:28.547 WARNING [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [florestal-web] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+11-Apr-2019 16:05:28.644 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war
+11-Apr-2019 16:05:33.574 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/stax-ex-1.8.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 16:05:33.805 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-api-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 16:05:34.084 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/jaxb-runtime-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 16:05:34.151 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/istack-commons-runtime-3.0.7.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 16:05:34.463 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [META-INF/versions/9/module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/byte-buddy-1.9.5.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 16:05:34.554 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/FastInfoset-1.2.15.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 16:05:34.919 SEVERE [localhost-startStop-4] org.apache.catalina.startup.ContextConfig.processAnnotationsJar Unable to process Jar entry [module-info.class] from Jar [jar:file:/C:/my_dev/tomcat/apache-tomcat-8.0.33/webapps/florestal-web/WEB-INF/lib/txw2-2.3.1.jar!/] for annotations
+ org.apache.tomcat.util.bcel.classfile.ClassFormatException: Invalid byte tag in constant pool: 19
+	at org.apache.tomcat.util.bcel.classfile.Constant.readConstant(Constant.java:97)
+	at org.apache.tomcat.util.bcel.classfile.ConstantPool.<init>(ConstantPool.java:55)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.readConstantPool(ClassParser.java:176)
+	at org.apache.tomcat.util.bcel.classfile.ClassParser.parse(ClassParser.java:85)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsStream(ContextConfig.java:2042)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsJar(ContextConfig.java:1988)
+	at org.apache.catalina.startup.ContextConfig.processAnnotationsUrl(ContextConfig.java:1958)
+	at org.apache.catalina.startup.ContextConfig.processAnnotations(ContextConfig.java:1912)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1157)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:779)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:306)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:95)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5150)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:147)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:725)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:701)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:717)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:940)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1816)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+11-Apr-2019 16:05:36.497 INFO [localhost-startStop-4] org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+11-Apr-2019 16:05:36.657 INFO [localhost-startStop-4] org.hibernate.Version.logVersion HHH000412: Hibernate Core {5.4.0.Final}
+11-Apr-2019 16:05:36.659 INFO [localhost-startStop-4] org.hibernate.cfg.Environment.<clinit> HHH000206: hibernate.properties not found
+11-Apr-2019 16:05:36.933 INFO [localhost-startStop-4] org.hibernate.annotations.common.reflection.java.JavaReflectionManager.<clinit> HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+11-Apr-2019 16:05:38.367 INFO [localhost-startStop-4] org.hibernate.dialect.Dialect.<init> HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+11-Apr-2019 16:05:41.212 INFO [localhost-startStop-4] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11-Apr-2019 16:05:41.745 INFO [localhost-startStop-4] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator.initiateService HHH000397: Using ASTQueryTranslatorFactory
+11-Apr-2019 16:05:43.574 INFO [localhost-startStop-4] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive C:\my_dev\tomcat\apache-tomcat-8.0.33\webapps\florestal-web.war has finished in 14,930 ms
+11-Apr-2019 18:49:06.779 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+11-Apr-2019 18:49:06.779 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+11-Apr-2019 18:49:06.831 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2019 18:49:06.882 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service Catalina
+11-Apr-2019 18:49:06.910 WARNING [localhost-startStop-5] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc The web application [florestal-web] registered the JDBC driver [com.microsoft.sqlserver.jdbc.SQLServerDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+11-Apr-2019 18:49:06.941 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+11-Apr-2019 18:49:06.944 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+11-Apr-2019 18:49:06.946 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+11-Apr-2019 18:49:06.947 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
